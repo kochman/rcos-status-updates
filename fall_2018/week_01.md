@@ -1,22 +1,20 @@
-## Last Week's Accomplishments
+## Last week
 
-> In this section, you can write about what you accomplished in the previous week.
+I opened three pull requests on the Shuttle Tracker:
 
-> Examples:
-> Bug fixes, Features added, Links to Issues, Links to Pull-Requests, Lightning Talks, Bonus Sessions
+- [Admins management command](https://github.com/wtg/shuttletracker/pull/165)
+- [Set datafeed endpoint content type](https://github.com/wtg/shuttletracker/pull/169)
+- [Do not allow static directory listings](https://github.com/wtg/shuttletracker/pull/170)
 
-## This Week's Plan
+I also opened a fourth, [Prometheus metrics](https://github.com/wtg/shuttletracker/pull/168), but it is not yet ready for review.
 
-> In this section, you can write about what you have planned for next week.
+On Pipeline, I continued to improve our WordPress importer. It grabs articles from poly.rpi.edu and creates representations of them in Pipeline.
 
-> Examples: New Bugs to be fixed, Design choices
+## This week
 
-## Anything Blocking?
+I plan to knock some more items off of the Pipeline to do list. I also plan to flesh out my Shuttle Tracker Prometheus PR a little more and polish it up for review. I am in the process of reviewing the [Typescript](https://github.com/wtg/shuttletracker/pull/164) PR.
 
-> In this section, you can write about any blockers that you are having trouble in the project.
+## Blockers
 
-> Examples: Confusion on how to approach a problem, Limited experience with a specific technology
+Virtually nothing. Just waiting on reviews for my Shuttle Tracker PRs, but I have enough other work to do in the meantime.
 
-## Notes
-
-> This is an optional section for any sort of information that does not fall under any of the other categories.
