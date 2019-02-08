@@ -1,24 +1,14 @@
-## Last Week's Accomplishments
+## Last week
 
-> In this section, you can write about what you accomplished in the previous week.
+I set up a custom Nerves system for Raspberry Pi called `hazel_rpi`. This is necessary because the default Nerves image doesn't include the kernel module for our Wi-Fi adapter, so I figured out how to build the image and make the necessary change to the kernel config.
 
-> This past week, I was able to implement the the dialog box for creating a new user in the front end. I \
-> learned how to send requests in JavaScript to the backend API.
+Next, I set up libcluster to automatically discover other nodes on the network using a multicast gossip strategy. This right now works fine when the nodes are either running on the same host or on a network where the DNS is configured to register nodes' DHCP hostnames.
 
-## This Week's Plan
+## This week
 
-> In this section, you can write about what you have planned for next week.
+The next step is to figure out how to get the nodes to connect to each other when DNS isn't configured. I think this will involve modifying the gossip protocol to include node IP address. Nodes receiving the gossip messages can modify their `/etc/hosts` files to point the node name at the node IP, which should fix the issue.
 
-> After my accomplishments from last week, I plan to add accessibility features to the user creation dialog box. \
-> I also plan on attending the git workshop this week.
+## Blockers
 
-## Anything Blocking?
+None at the moment.
 
-> In this section, you can write about any blockers that you are having trouble in the project.
-
-> I don't know how to test the accessibility features I am going to be implementing this week, so i am going to \
-> ask my mentors if they have any suggestions.
-
-## Notes
-
-> This is an optional section for any sort of information that does not fall under any of the other categories.
